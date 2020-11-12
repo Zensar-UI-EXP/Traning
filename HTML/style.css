@@ -7,6 +7,42 @@ blockquote, q {quotes: none;}
 blockquote:before, blockquote:after,
 q:before, q:after {content: '';content: none;}
 table {border-collapse: collapse;border-spacing: 0;}
+@font-face {
+	font-family: "Gilroy-Bold";
+	src: url("fonts/Gilroy-Bold.eot"); /* IE9 Compat Modes */
+	src: url("fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("fonts/Gilroy-Bold.otf") format("opentype"), /* Open Type Font */
+		url("fonts/Gilroy-Bold.svg") format("svg"), /* Legacy iOS */
+		url("fonts/Gilroy-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+		url("fonts/Gilroy-Bold.woff") format("woff"), /* Modern Browsers */
+		url("fonts/Gilroy-Bold.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Gilroy-SemiBold";
+	src: url("fonts/Gilroy-SemiBold.eot"); /* IE9 Compat Modes */
+	src: url("fonts/Gilroy-SemiBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("fonts/Gilroy-SemiBold.otf") format("opentype"), /* Open Type Font */
+		url("fonts/Gilroy-SemiBold.svg") format("svg"), /* Legacy iOS */
+		url("fonts/Gilroy-SemiBold.ttf") format("truetype"), /* Safari, Android, iOS */
+		url("fonts/Gilroy-SemiBold.woff") format("woff"), /* Modern Browsers */
+		url("fonts/Gilroy-SemiBold.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Inter";
+	src: url("fonts/Inter-Regular.eot"); /* IE9 Compat Modes */
+	src: url("fonts/Inter-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("fonts/Inter-Regular.otf") format("opentype"), /* Open Type Font */
+		url("fonts/Inter-Regular.svg") format("svg"), /* Legacy iOS */
+		url("fonts/Inter-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+		url("fonts/Inter-Regular.woff") format("woff"), /* Modern Browsers */
+		url("fonts/Inter-Regular.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: normal;
+	font-style: normal;
+}
 .uxgheader{
     width: 100%;
     background: #EFF5FC;
@@ -74,4 +110,75 @@ table {border-collapse: collapse;border-spacing: 0;}
 }
 .uxgheader__list:last-child{
     margin-right: 0;
+}
+.uxgbanner{
+    background: #EFF5FC;
+    width: 100%;
+    position: relative;
+}
+.uxgbanner__inner{
+    width: 1024px;
+    margin: 0 auto;
+    padding: 120px 0 135px;
+    display: flex;
+}
+.uxgbanner__heading{
+    font-family: "Gilroy-Bold";
+    font-size: 52px;
+    line-height: 70px;
+    color: #00005C;
+}
+.uxgbanner__desc{
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.214286px;
+    color: #536083;
+    margin: 30px 0 40px;
+}
+.btn{
+    background: #3C50E0;
+    box-shadow: 0px 6px 12px rgba(149, 166, 229, 0.16);
+    border-radius: 8px;
+    padding: 20px 40px;
+    font-family: "Gilroy-SemiBold";
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.142857px;
+    color: #FFFFFF;
+    border: 0;
+}
+.uxgbanner__leftcont{
+    width: 50%;
+}
+.uxgbanner__img{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.uxgbanner__bottom{
+    position: absolute;
+    width: 536px;
+    max-height: 165px;
+    bottom: -82.5px;
+    left: 50%;
+    margin-left: -268px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 24px rgba(149, 166, 229, 0.16);
+    border-radius: 12px;
+    display: flex;
+}
+.uxgbanner__btmimg{
+    max-width: 186px;
+}
+.uxgbanner__btmdesc{
+    margin: 35px 35px;
+    width: calc(100% - 70px);
+    font-family: "Gilroy-SemiBold";
+    font-size: 20px;
+    line-height: 32px;
+    color: #04080F;
 }
